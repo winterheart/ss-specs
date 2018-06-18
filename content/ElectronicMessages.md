@@ -47,7 +47,16 @@ The hexadecimal number is the offset for the next message (based on resource ```
 
 ### Text Content
 
-Within the texts, the substring ```$N``` is the placeholder for the name of the hacker.
+The text can have placeholders, which are replaced by the engine. The most commonly encountered placeholder is ```$N```, being replaced by the player's name. Placeholders are case insensitive.
+
+| Placeholder | Replacement        |
+|-------------|--------------------|
+| ```$C```    | Difficulty index   |
+| ```$D```    | Number of revivals |
+| ```$K```    | Number of kills    |
+| ```$N```    | Player's name      |
+| ```$S```    | Score              |
+| ```$T```    | Time playing       |
 
 ### Audio
 
