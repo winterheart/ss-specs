@@ -58,6 +58,8 @@ The text can have placeholders, which are replaced by the engine. The most commo
 | ```$S```    | Score              |
 | ```$T```    | Time playing       |
 
+In text can appear special symbols - 0x01 (`CHAR_SOFTCR`, "Soft carriage return") and 0x02 (`CHAR_SOFTSP`, "Soft space"). These symbols intended to foramt text during wrapping it to 80-column area.
+
 ### Audio
 
 Corresponding audio resources are based on ID ```0x0AB5```. If an electronic message with ID X has audio, the audio will have resource ID ```0x0AB5``` + X. (Also: resource ID of text resource + 300)
